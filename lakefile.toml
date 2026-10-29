@@ -39,3 +39,14 @@ name = "lint_style"
 srcDir = "scripts"
 root = "LintStyle"
 supportInterpreter = true
+
+# LeanBlame tags for OpenVouch: the `trusted` attribute, pinned so that a commit fixes the whole build.
+[[require]]
+name = "leanblame"
+git = "https://github.com/fliingelephant/leanblame.git"
+rev = "b4118e1fd591455acf7c8c6cd7d51c18d6a56693"
+subDir = "cli"
+
+# The tags, written after the fact (`attribute [trusted "id"] Name`): `leanblame export --lib TNLean --lib Tags`.
+[[lean_lib]]
+name = "Tags"

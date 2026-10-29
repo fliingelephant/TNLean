@@ -108,3 +108,6 @@ __pycache__/
 
 # Local provenance records and verification outputs
 **/provenance/
+
+# LeanBlame store
+.leanblame/
